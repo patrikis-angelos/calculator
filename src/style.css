@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+}
+
+.button {
+  width: 40px;
+  cursor: pointer;
+}

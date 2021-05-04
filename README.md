@@ -2,7 +2,7 @@
 
 # Calculator
 
-Initial commits of the calculator app. Initialized with create-react-app.
+Displaying the basic components of the calculator app.
 
 ## Built With
 
