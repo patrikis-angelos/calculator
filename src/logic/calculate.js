@@ -15,11 +15,17 @@ const calculate = (data, button) => {
     case '9':
     case '.':
       if (operation === '') {
+        if (button === '.' && total.includes('.')) {
+          break;
+        }
         total += button;
       } else if (operation === '=') {
         total = button;
         operation = '';
       } else {
+        if (button === '.' && next.includes('.')) {
+          break;
+        }
         next += button;
       }
       break;
