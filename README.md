@@ -19,6 +19,10 @@ To get a local copy running
 - `npm install`
 - `npm run start`
 
+To test the logic files
+
+- `npm run test`
+
 ## Author
 
 👤 **Patrikis Angelos**
