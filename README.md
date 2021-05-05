@@ -2,7 +2,9 @@
 
 # Calculator
 
-Displaying the basic components of the calculator app.
+A calculator app where you can execute the 4 basic operations and calculate percentages.
+
+![](/docs/screenshot.png)
 
 ## Built With
 
