@@ -34,8 +34,18 @@ const calculate = (data, button) => {
       operation = button;
       break;
     case '%':
+      if (operation === '') {
+        total = operate(total, 1, '%');
+      } else {
+        next = operate(next, total, '%');
+      }
       break;
     case '+/-':
+      if (operation === '') {
+        total = operate(total, 1, '+/-');
+      } else {
+        next = operate(next, 1, '+/-');
+      }
       break;
     case '=':
       total = operate(total, next, operation);
