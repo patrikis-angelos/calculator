@@ -35,7 +35,7 @@ describe('operate', () => {
     expect(result).toStrictEqual(Big(3.75));
   });
   it('modifies a number to percentage', () => {
-    const result = operate(45, 100, '%');
+    const result = operate(45, 1, '%');
     expect(result).toStrictEqual(Big(0.45));
   });
   it('returns the opposite of a number', () => {

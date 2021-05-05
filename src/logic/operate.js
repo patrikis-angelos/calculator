@@ -2,7 +2,7 @@ import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let result = 0;
-  if (numberTwo === '') return numberOne;
+  if (numberTwo === '' || numberOne === '') return numberOne;
   const x = Big(numberOne);
   const y = Big(numberTwo);
   switch (operation) {
@@ -19,7 +19,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = x.div(y);
       break;
     case '%':
-      result = x.div(100);
+      result = x.div(100).times(numberTwo);
       break;
     case '+/-':
       result = x.times(-1);
