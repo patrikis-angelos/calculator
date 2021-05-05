@@ -16,6 +16,9 @@ const calculate = (data, button) => {
     case '.':
       if (operation === '') {
         total += button;
+      } else if (operation === '=') {
+        total = button;
+        operation = '';
       } else {
         next += button;
       }
@@ -25,16 +28,19 @@ const calculate = (data, button) => {
     case '*':
     case '÷':
       if (next !== '') {
-        operate()
-      } else {
-        operation = button
+        total = operate(total, next, operation);
+        next = '';
       }
+      operation = button;
       break;
     case '%':
       break;
     case '+/-':
       break;
     case '=':
+      total = operate(total, next, operation);
+      next = '';
+      operation = '=';
       break;
     case 'AC':
       total = '';
