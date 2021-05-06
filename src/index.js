@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './style.css';
-import App from './components/App';
+import Nav from './components/Nav';
+import Routes from './components/Routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Nav />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root'),
 );
