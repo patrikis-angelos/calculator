@@ -7,7 +7,7 @@ const Nav = () => (
     <div>
       <NavLink name="Home" path="/" />
       <NavLink name="Calculator" path="/calculator" />
-      <NavLink name="Quote" path="/" />
+      <NavLink name="Quote" path="/quote" />
     </div>
   </nav>
 );
