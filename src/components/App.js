@@ -5,7 +5,7 @@ import calculate from '../logic/calculate';
 
 const App = () => {
   const [data, setData] = useState({
-    total: '',
+    total: '0',
     next: '',
     operation: '',
   });
@@ -16,9 +16,6 @@ const App = () => {
   };
 
   let { total, next, operation } = data; // eslint-disable-line
-  if (total === '') {
-    total = '0';
-  }
 
   return (
     <>

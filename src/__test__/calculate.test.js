@@ -86,10 +86,10 @@ describe('calculate', () => {
     data = calculate(data, '=');
     expect(data.total).toStrictEqual(Big(20.6));
   });
-  it('returns an empty value as percentage if there is an operation in place but not a next value', () => {
+  it('returns Error if there is an operation in place but not a next value', () => {
     let data = { total: '20', next: '', operation: '+' };
     data = calculate(data, '%');
-    expect(data.next).toBe('');
+    expect(data.next).toBe('Error');
   });
   it('modifies the total value to its opposite', () => {
     let data = { total: '98', next: '', operation: '' };
@@ -103,15 +103,15 @@ describe('calculate', () => {
     data = calculate(data, '=');
     expect(data.total).toStrictEqual(Big(86));
   });
-  it('returns an empty value as the opposite if there is an operation in place but not a next value', () => {
+  it('returns Error if there is an operation in place but not a next value', () => {
     let data = { total: '20', next: '', operation: '+' };
     data = calculate(data, '+/-');
-    expect(data.next).toBe('');
+    expect(data.next).toBe('Error');
   });
   it('clears the given data', () => {
     let data = { total: '98', next: '12', operation: '+' };
     data = calculate(data, 'AC');
-    expect(data.total).toBe('');
+    expect(data.total).toBe('0');
     expect(data.next).toBe('');
     expect(data.operation).toBe('');
   });

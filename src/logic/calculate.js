@@ -14,14 +14,14 @@ const calculate = (data, button) => {
     case '8':
     case '9':
     case '.':
-      if (operation === '') {
+      if (operation === '=' || (total === '0' && operation === '')) {
+        total = button;
+        operation = '';
+      } else if (operation === '') {
         if (button === '.' && total.includes('.')) {
           break;
         }
         total += button;
-      } else if (operation === '=') {
-        total = button;
-        operation = '';
       } else {
         if (button === '.' && next.includes('.')) {
           break;
@@ -59,7 +59,7 @@ const calculate = (data, button) => {
       operation = '=';
       break;
     case 'AC':
-      total = '';
+      total = '0';
       next = '';
       operation = '';
       break;
