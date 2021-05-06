@@ -3,10 +3,10 @@ import NavLink from './NavLink';
 
 const Nav = () => (
   <nav className="flex nav">
-    <p>Math Magicians</p>
+    <h1>Math Magicians</h1>
     <div>
       <NavLink name="Home" path="/" />
-      <NavLink name="Calculator" path="/" />
+      <NavLink name="Calculator" path="/calculator" />
       <NavLink name="Quote" path="/" />
     </div>
   </nav>

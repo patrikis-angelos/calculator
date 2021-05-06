@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const NavLink = (props) => {
   const { name, path } = props;
   return (
-    <a className="m-l-10" href={path}>{name}</a>
+    <a className="m-l-10 link" href={path}>{name}</a>
   );
 };
 
