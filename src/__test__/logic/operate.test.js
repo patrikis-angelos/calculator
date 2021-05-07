@@ -1,5 +1,5 @@
 import Big from 'big.js';
-import operate from '../logic/operate';
+import operate from '../../logic/operate';
 
 describe('operate', () => {
   it('adds two numbers and returns the result (1)', () => {

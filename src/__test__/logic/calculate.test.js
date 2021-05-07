@@ -1,5 +1,5 @@
 import Big from 'big.js';
-import calculate from '../logic/calculate';
+import calculate from '../../logic/calculate';
 
 describe('calculate', () => {
   it('constructs the (total)number as you type (1)', () => {

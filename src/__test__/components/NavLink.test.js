@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from '../components/Home';
+import NavLink from '../../components/NavLink';
 
-describe('Home', () => {
+describe('NavLink', () => {
   it('renders correctly', () => {
     const tree = renderer
-    .create(<Home />)
+    .create(<NavLink path='/' name='test'/>)
     .toJSON();
     expect(tree).toMatchSnapshot();
   });
