@@ -5,8 +5,8 @@ import Home from '../../components/Home';
 describe('Home', () => {
   it('renders correctly', () => {
     const tree = renderer
-    .create(<Home />)
-    .toJSON();
+      .create(<Home />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

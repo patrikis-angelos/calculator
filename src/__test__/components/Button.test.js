@@ -1,21 +1,21 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button from '../../components/Button';
 import { render, screen } from '@testing-library/react';
-import  '@testing-library/jest-dom';
+import Button from '../../components/Button';
+import '@testing-library/jest-dom';
 
-const test = () => {}
+const test = () => {};
 
 describe('Button', () => {
   it('renders correctly', () => {
     const tree = renderer
-    .create(<Button name='1' clickHandler={test}/>)
-    .toJSON();
+      .create(<Button name="1" clickHandler={test} />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it('renders with the given name', () => {
     render(<Button name="test" clickHandler={test} />);
-    const button = screen.getByRole('button')
+    const button = screen.getByRole('button');
     expect(button).toHaveTextContent('test');
   });
 });

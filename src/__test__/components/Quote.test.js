@@ -5,8 +5,8 @@ import Quote from '../../components/Quote';
 describe('Quote', () => {
   it('renders correctly', () => {
     const tree = renderer
-    .create(<Quote />)
-    .toJSON();
+      .create(<Quote />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

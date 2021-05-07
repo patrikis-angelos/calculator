@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Display from '../../components/Display';
 import { render } from '@testing-library/react';
-import  '@testing-library/jest-dom';
+import Display from '../../components/Display';
+import '@testing-library/jest-dom';
 
 describe('Display', () => {
   it('renders correctly', () => {
     const tree = renderer
-    .create(<Display />)
-    .toJSON();
+      .create(<Display />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
   it('renders with default value 0', () => {
