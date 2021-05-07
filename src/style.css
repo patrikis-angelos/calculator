@@ -3,6 +3,71 @@
 }
 
 .button {
-  width: 40px;
+  width: 25%;
   cursor: pointer;
+}
+
+.gray {
+  background-color: rgb(221, 221, 221);
+}
+
+.wide {
+  width: 50%;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.height-100 {
+  height: 100px;
+}
+
+.display {
+  width: 700px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: right;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.panel {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.link {
+  padding-left: 10px;
+}
+
+.link:not(:first-of-type) {
+  border-left: 1px solid black;
+}
+
+.info {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-weight: bold;
 }
