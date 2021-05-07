@@ -16,4 +16,9 @@ describe('Display', () => {
     const display = container.querySelector('div');
     expect(display).toHaveTextContent('0');
   });
+  it('renders the corerct result given as prop', () => {
+    const { container } = render(<Display result='58'/>);
+    const display = container.querySelector('div');
+    expect(display).toHaveTextContent('58');
+  })
 });
