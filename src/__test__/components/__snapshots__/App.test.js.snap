@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+Array [
+  <div
+    className="display height-100"
+  >
+    0  
+  </div>,
+  <div
+    className="panel"
+  >
+    <div
+      className="flex height-100"
+    >
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="button orange "
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="button orange "
+        onClick={[Function]}
+        type="button"
+      >
+        *
+      </button>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="button orange "
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="button orange "
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <button
+        className="button gray wide"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="button gray "
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="button orange "
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>,
+]
+`;
