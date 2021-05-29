@@ -7,34 +7,34 @@ const ButtonPanel = (props) => {
     props.clickHandler(button)
   );
   return (
-    <div>
-      <div className="flex">
-        <Button name="AC" clickHandler={handleClick} />
-        <Button name="+/-" clickHandler={handleClick} />
-        <Button name="%" clickHandler={handleClick} />
+    <div className="panel">
+      <div className="flex height-100">
+        <Button color="gray" name="AC" clickHandler={handleClick} />
+        <Button color="gray" name="+/-" clickHandler={handleClick} />
+        <Button color="gray" name="%" clickHandler={handleClick} />
         <Button name="÷" clickHandler={handleClick} />
       </div>
-      <div className="flex">
-        <Button name="5" clickHandler={handleClick} />
-        <Button name="8" clickHandler={handleClick} />
-        <Button name="9" clickHandler={handleClick} />
+      <div className="flex height-100">
+        <Button color="gray" name="7" clickHandler={handleClick} />
+        <Button color="gray" name="8" clickHandler={handleClick} />
+        <Button color="gray" name="9" clickHandler={handleClick} />
         <Button name="*" clickHandler={handleClick} />
       </div>
-      <div className="flex">
-        <Button name="4" clickHandler={handleClick} />
-        <Button name="5" clickHandler={handleClick} />
-        <Button name="6" clickHandler={handleClick} />
+      <div className="flex height-100">
+        <Button color="gray" name="4" clickHandler={handleClick} />
+        <Button color="gray" name="5" clickHandler={handleClick} />
+        <Button color="gray" name="6" clickHandler={handleClick} />
         <Button name="-" clickHandler={handleClick} />
       </div>
-      <div className="flex">
-        <Button name="1" clickHandler={handleClick} />
-        <Button name="2" clickHandler={handleClick} />
-        <Button name="3" clickHandler={handleClick} />
+      <div className="flex height-100">
+        <Button color="gray" name="1" clickHandler={handleClick} />
+        <Button color="gray" name="2" clickHandler={handleClick} />
+        <Button color="gray" name="3" clickHandler={handleClick} />
         <Button name="+" clickHandler={handleClick} />
       </div>
-      <div className="flex">
-        <Button name="0" clickHandler={handleClick} />
-        <Button name="." clickHandler={handleClick} />
+      <div className="flex height-100">
+        <Button wide="wide" color="gray" name="0" clickHandler={handleClick} />
+        <Button color="gray" name="." clickHandler={handleClick} />
         <Button name="=" clickHandler={handleClick} />
       </div>
     </div>
