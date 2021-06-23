@@ -5,7 +5,7 @@ const operate = (numberOne, numberTwo, operation) => {
   let x;
   let y;
   if (numberTwo === '') return numberOne;
-  if (String(numberOne) === '0' && numberTwo === '0') return 'Undefined';
+  if (String(numberOne) === '0' && numberTwo === '0' && operation === '÷') return 'Undefined';
   if (String(numberOne).includes('Infinity')) {
     if (numberTwo === '0' && operation === '÷') return 'Undefined';
     return numberOne;
